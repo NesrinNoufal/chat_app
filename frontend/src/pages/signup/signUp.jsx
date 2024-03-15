@@ -40,7 +40,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							placeholder='John Doe'
-							className='w-full input input-bordered  h-10'
+							className='w-full input input-bordered  h-10 bg-gray-800 text-white'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
 						/>
@@ -53,7 +53,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							placeholder='johndoe'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 bg-gray-800 text-white'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
 						/>
@@ -66,7 +66,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							placeholder='Enter Password'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 bg-gray-800 text-white'
 							value={inputs.password}
 							onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
 						/>
@@ -79,7 +79,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							placeholder='Confirm Password'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 bg-gray-800 text-white'
 							value={inputs.confirmPassword}
 							onChange={(e) => setInputs({ ...inputs, confirmPassword: e.target.value })}
 						/>
@@ -96,7 +96,7 @@ const SignUp = () => {
 					</Link>
 
 					<div>
-					<button className='btn btn-block btn-sm mt-2 border border-slate-700' disabled={loading}>
+					<button className='btn btn-block btn-sm mt-2 border border-slate-700 bg-gray-800 text-white' disabled={loading}>
 							{loading ? <span className='loading loading-spinner'></span> : "Sign Up"}
 						</button>
 					</div>

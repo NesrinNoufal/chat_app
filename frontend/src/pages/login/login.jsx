@@ -15,7 +15,8 @@ const Login = () => {
 
 	return (
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+			<div className=
+			'w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Login
 					<span className='text-blue-500'> ChatApp</span>
@@ -29,7 +30,7 @@ const Login = () => {
 						<input
 							type='text'
 							placeholder='Enter username'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 bg-gray-800 text-white'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
@@ -42,7 +43,7 @@ const Login = () => {
 						<input
 							type='password'
 							placeholder='Enter Password'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 bg-gray-800 text-white'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
@@ -52,7 +53,7 @@ const Login = () => {
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
+						<button className='btn btn-block btn-sm mt-2 bg-gray-800 text-white' disabled={loading}>
 							{loading ? <span className='loading loading-spinner '></span> : "Login"}
 						</button>
 					</div>
@@ -78,7 +79,7 @@ export default Login;
 // 						<label className='label p-2'>
 // 							<span className='text-base label-text'>Username</span>
 // 						</label>
-// 						<input type='text' placeholder='Enter username' className='w-full input input-bordered h-10' />
+// 						<input type='text' placeholder='Enter username' className='w-full input input-bordered h-10 bg-gray-800 text-white' />
 // 					</div>
 
 // 					<div>
